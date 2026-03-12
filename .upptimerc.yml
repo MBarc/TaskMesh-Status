@@ -1,36 +1,51 @@
-# Change these first
-owner: upptime # Your GitHub organization or username, where this repository lives
-repo: upptime # The name of this repository
+owner: MBarc
+repo: TaskMesh-Status
+userAgent: TaskMesh-Status
+
+url: https://status.taskmesh.co
+baseUrl: /
+
+logo: https://taskmesh.co/taskmesh-logo.svg
 
 sites:
-  - name: Google
-    url: https://www.google.com
-  - name: Wikipedia
-    url: https://en.wikipedia.org
-  - name: Hacker News
-    url: https://news.ycombinator.com
-  - name: Test Broken Site
-    url: https://thissitedoesnotexist.koj.co
-  - name: IPv6 test
-    url: forwardemail.net
-    port: 80
-    check: "tcp-ping"
-    ipv6: true
+  - name: Website
+    url: https://taskmesh.co
+    expectedStatusCodes:
+      - 200
+
+  - name: Licensing API
+    url: https://taskmesh.co/api/billing/health
+    expectedStatusCodes:
+      - 200
+      - 204
+
+  - name: Marketplace
+    url: https://taskmesh.co/marketplace
+    expectedStatusCodes:
+      - 200
+
+  - name: Update Delivery
+    url: https://api.github.com/repos/MBarc/TaskMesh/releases/latest
+    expectedStatusCodes:
+      - 200
 
 status-website:
-  # Add your custom domain name, or remove the `cname` line if you don't have a domain
-  # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
-  cname: demo.upptime.js.org
-  # baseUrl: /your-repo-name
-  logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
-  name: Upptime
-  introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
-  introMessage: This is a sample status page which uses **real-time** data from our [GitHub repository](https://github.com/upptime/upptime). No server required — just GitHub Actions, Issues, and Pages. [**Get your own for free**](https://github.com/upptime/upptime)
+  cname: status.taskmesh.co
+  name: TaskMesh Status
+  introTitle: TaskMesh Service Status
+  introMessage: >
+    Real-time status and incident history for TaskMesh hosted services.
+    Self-hosted users can always access their local installation regardless
+    of the status of these services.
   navbar:
-    - title: Status
-      href: /
-    - title: GitHub
-      href: https://github.com/$OWNER/$REPO
+    - title: taskmesh.co
+      href: https://taskmesh.co
+    - title: Changelog
+      href: https://taskmesh.co/changelog
+    - title: Contact
+      href: https://taskmesh.co/contact
 
-# Upptime also supports notifications, assigning issues, and more
-# See https://upptime.js.org/docs/configuration
+i18n:
+  language: en
+
+schedule: "@every 5m"
