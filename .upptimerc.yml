@@ -13,31 +13,13 @@ sites:
     expectedStatusCodes:
       - 200
 
-  - name: Licensing API
-    url: https://taskmesh.co/api/billing/health
-    expectedStatusCodes:
-      - 200
-      - 204
-
   - name: Marketplace
     url: https://taskmesh.co/marketplace
     expectedStatusCodes:
       - 200
 
-  - name: Update Delivery
-    url: https://api.github.com/repos/MBarc/TaskMesh/releases/latest
-    expectedStatusCodes:
-      - 200
-
   - name: Billing
-    url: https://api.stripe.com
-    expectedStatusCodes:
-      - 200
-      - 301
-      - 302
-
-  - name: Support Portal
-    url: https://support.taskmesh.co
+    url: https://stripe.com
     expectedStatusCodes:
       - 200
 
