@@ -4,7 +4,7 @@
     "url": "https://taskmesh.co",
     "icon": "https://icons.duckduckgo.com/ip3/taskmesh.co.ico",
     "slug": "website",
-    "status": "up",
+    "status": "down",
     "uptime": "99.00%",
     "uptimeDay": "89.16%",
     "uptimeWeek": "97.90%",
@@ -38,7 +38,7 @@
     "timeMonth": 64,
     "timeYear": 64,
     "dailyMinutesDown": {
-      "2026-03-28": 1120,
+      "2026-03-28": 1180,
       "2026-03-27": 1440,
       "2026-03-26": 1440,
       "2026-03-25": 1440,
