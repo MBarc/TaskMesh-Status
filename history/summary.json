@@ -4,10 +4,10 @@
     "url": "https://taskmesh.co",
     "icon": "https://icons.duckduckgo.com/ip3/taskmesh.co.ico",
     "slug": "website",
-    "status": "up",
+    "status": "down",
     "uptime": "99.08%",
-    "uptimeDay": "90.51%",
-    "uptimeWeek": "98.09%",
+    "uptimeDay": "90.44%",
+    "uptimeWeek": "98.08%",
     "uptimeMonth": "99.08%",
     "uptimeYear": "99.08%",
     "time": 508,
@@ -16,7 +16,7 @@
     "timeMonth": 508,
     "timeYear": 508,
     "dailyMinutesDown": {
-      "2026-03-28": 137,
+      "2026-03-28": 138,
       "2026-03-27": 56,
       "2026-03-20": 16
     }
@@ -38,7 +38,7 @@
     "timeMonth": 64,
     "timeYear": 64,
     "dailyMinutesDown": {
-      "2026-03-28": 978,
+      "2026-03-28": 1101,
       "2026-03-27": 1440,
       "2026-03-26": 1440,
       "2026-03-25": 1440,
